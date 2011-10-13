@@ -29,7 +29,7 @@ def printheader(word):
     '''generate a nice header string'''
     out.write("\n%s\n%s\n" % (word, '-' * len(word)))
 
-class Buss:
+class Bus:
     def __init__(self):
         with open('key.txt') as fd:
             self.key=fd.read().strip()
@@ -96,7 +96,7 @@ class Buss:
 def main():
     """main
     """
-    b=Buss()
+    b=Bus()
     t1=time.time()
     b.get_tt('169')
     b.get_tt('171')
